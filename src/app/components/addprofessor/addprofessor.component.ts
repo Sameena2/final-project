@@ -32,7 +32,9 @@ export class AddprofessorComponent implements OnInit {
       error => {
         console.log("Process Failed");
         console.log(error.error);
-        this.msg = "Professor with "+this.professor.email+" already exists !!!";
+        //this.msg = "Professor with "+this.professor.email+" already exists !!!";
+        this._router.navigate(['/professorlist']);
+        
       }
     )
   }
