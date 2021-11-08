@@ -48,6 +48,7 @@ export class RegistrationComponent implements OnInit {
         console.log("Registration Failed");
         console.log(error.error);
         this.msg = "User with "+this.user.email+" already exists !!!";
+        this._router.navigate(['/registrationsuccess']);
       }
     )
   }
@@ -65,6 +66,7 @@ export class RegistrationComponent implements OnInit {
         console.log("Registration Failed");
         console.log(error.error);
         this.msg = "Professor with "+this.professor.email+" already exists !!!";
+        this._router.navigate(['/registrationsuccess']);
       }
     )
   }
