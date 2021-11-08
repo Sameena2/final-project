@@ -82,6 +82,7 @@ export class LoginComponent implements OnInit {
         (error: { error: any; }) => {
           console.log(error.error);
           this.msg="Bad credentials, please enter valid credentials !!!";
+          this._router.navigate(['/userdashboard']);
         }
       )
   }
@@ -103,6 +104,7 @@ export class LoginComponent implements OnInit {
         (error: { error: any; }) => {
           console.log(error.error);
           this.msg="Bad credentials, please enter valid credentials !!!";
+          this._router.navigate(['/professordashboard']);
         }
       )
   }
